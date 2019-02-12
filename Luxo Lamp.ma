@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Luxo Lamp.ma
-//Last modified: Tue, Feb 12, 2019 03:34:35 PM
+//Last modified: Tue, Feb 12, 2019 03:39:21 PM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
