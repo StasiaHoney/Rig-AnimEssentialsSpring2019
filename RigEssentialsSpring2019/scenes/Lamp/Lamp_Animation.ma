@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Lamp_Animation.ma
-//Last modified: Tue, Feb 19, 2019 09:16:55 PM
+//Last modified: Tue, Feb 19, 2019 10:07:45 PM
 //Codeset: 1252
 file -rdi 1 -ns "Lamp_02_Rig" -rfn "Lamp_02_RigRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/kosuk/OneDrive/Documents/College/Rig&AnimEssentialsSpring2019/Rig-AnimEssentialsSpring2019//RigEssentialsSpring2019/scenes/Lamp/Lamp_02_Rig.ma";
@@ -22,13 +22,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "DE9B5C94-48F6-73C9-DD8A-4B9F04E16136";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -24.031747693708205 23.50275142201658 -68.153298390379774 ;
+	setAttr ".t" -type "double3" -18.369338889122194 31.027579077942629 -83.204226687416934 ;
 	setAttr ".r" -type "double3" -18.338352729833666 -903.39999999986605 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F4AA4343-4328-007A-644B-EABF8BE34C5F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 72.814292041762982;
+	setAttr ".coi" 89.761996715681533;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -116,27 +116,27 @@ createNode mesh -n "pPlaneShape1" -p "pPlane1";
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "B9559A82-4F88-F2BE-949B-7387D686201A";
+	rename -uid "FCB4AE86-4D73-0A52-90FB-B2B0333A0874";
 	setAttr -s 7 ".lnk";
 	setAttr -s 7 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "10CFD328-4C4B-C382-7F92-65AC85696784";
+	rename -uid "06AA9B32-443A-515A-6DB3-6B916557E42B";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "D1E571AF-47C9-4203-6579-A9927DC3FDF4";
+	rename -uid "2FFEE5BC-42E9-914A-D55E-FB926DA38D6F";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "114BCBE9-4BD5-963C-FE56-96BD7160DC97";
+	rename -uid "A64F5C54-47A9-E945-7AD3-8CABE6E50CF3";
 	setAttr -s 2 ".dli[1]"  1;
 	setAttr -s 2 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "C0C047D2-41FB-FDA8-8285-AE823855E4F9";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "CF8028A0-441C-576E-D485-808EAC454687";
+	rename -uid "7CD35C26-4657-3AC6-A6AE-A1ACEED346B4";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "1300288F-44CC-85FF-3AD6-B7B2A1E4838B";
 	setAttr ".g" yes;
 createNode reference -n "Lamp_02_RigRN";
 	rename -uid "1B3E82ED-49AA-14E1-05AC-FA8675D027E1";
-	setAttr -s 25 ".phl";
+	setAttr -s 31 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -162,9 +162,25 @@ createNode reference -n "Lamp_02_RigRN";
 	setAttr ".phl[23]" 0;
 	setAttr ".phl[24]" 0;
 	setAttr ".phl[25]" 0;
+	setAttr ".phl[26]" 0;
+	setAttr ".phl[27]" 0;
+	setAttr ".phl[28]" 0;
+	setAttr ".phl[29]" 0;
+	setAttr ".phl[30]" 0;
+	setAttr ".phl[31]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Lamp_02_RigRN"
-		"Lamp_02_RigRN" 12
+		"Lamp_02_RigRN" 0
+		"Lamp_02_RigRN" 93
+		2 "|Lamp_02_Rig:Lamp_02" "visibility" " -av 0"
+		2 "|Lamp_02_Rig:Lamp_02" "translate" " -type \"double3\" 100 100 100"
+		2 "|Lamp_02_Rig:Lamp_02" "translateZ" " -av"
+		2 "|Lamp_02_Rig:Lamp_02" "translateX" " -av"
+		2 "|Lamp_02_Rig:Lamp_02" "translateY" " -av"
+		2 "|Lamp_02_Rig:Lamp_02" "scale" " -type \"double3\" 2.537 2.537 2.537"
+		2 "|Lamp_02_Rig:Lamp_02" "scaleZ" " -av"
+		2 "|Lamp_02_Rig:Lamp_02" "scaleX" " -av"
+		2 "|Lamp_02_Rig:Lamp_02" "scaleY" " -av"
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Geometry|Lamp_02_Rig:Shade_Geo|Lamp_02_Rig:Shade_Geo_Geo" 
 		"aiTranslator" " -type \"string\" \"polymesh\""
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Geometry|Lamp_02_Rig:Shade_Geo|Lamp_02_Rig:LightBulb|Lamp_02_Rig:LightBulb_Geo" 
@@ -189,36 +205,10 @@ createNode reference -n "Lamp_02_RigRN";
 		"aiTranslator" " -type \"string\" \"polymesh\""
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Geometry|Lamp_02_Rig:Base_Geo|Lamp_02_Rig:Peg_Geo|Lamp_02_Rig:Peg_Geo_Geo" 
 		"aiTranslator" " -type \"string\" \"polymesh\""
-		"Lamp_02_RigRN" 79
-		2 "|Lamp_02_Rig:Lamp_02" "visibility" " -av 1"
-		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Geometry|Lamp_02_Rig:Shade_Geo|Lamp_02_Rig:Shade_Geo_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Geometry|Lamp_02_Rig:Shade_Geo|Lamp_02_Rig:LightBulb|Lamp_02_Rig:LightBulb_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Geometry|Lamp_02_Rig:Shade_Geo|Lamp_02_Rig:LightBulb|Lamp_02_Rig:Bulb|Lamp_02_Rig:Bulb_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Geometry|Lamp_02_Rig:Shade_Geo|Lamp_02_Rig:LightBulb|Lamp_02_Rig:Filament|Lamp_02_Rig:Filament_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Geometry|Lamp_02_Rig:Shade_Geo|Lamp_02_Rig:polySurfaceShape1" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Geometry|Lamp_02_Rig:Shade_Geo|Lamp_02_Rig:Shade_Geo_GeoOrig" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Geometry|Lamp_02_Rig:UpperArm_Geo|Lamp_02_Rig:UpperArm_Geo_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Geometry|Lamp_02_Rig:UpperArm_Geo|Lamp_02_Rig:UpperScrew_Geo|Lamp_02_Rig:UpperScrew_Geo_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Geometry|Lamp_02_Rig:LowerArm_Geo|Lamp_02_Rig:LowerArm_Geo_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Geometry|Lamp_02_Rig:LowerArm_Geo|Lamp_02_Rig:LowerScrew_Geo|Lamp_02_Rig:LowerScrew_Geo_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Geometry|Lamp_02_Rig:Base_Geo|Lamp_02_Rig:Base_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Geometry|Lamp_02_Rig:Base_Geo|Lamp_02_Rig:Peg_Geo|Lamp_02_Rig:Peg_Geo_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl" 
 		"visibility" " 1"
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl" 
-		"translate" " -type \"double3\" -17.9918921286438227 13.31131691544901585 2.4631444553824974e-06"
+		"translate" " -type \"double3\" -1.50855744953211213 -4.61587615582038335 -4.0772765422783676e-08"
 		
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl" 
 		"translateX" " -av"
@@ -227,7 +217,7 @@ createNode reference -n "Lamp_02_RigRN";
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl" 
 		"translateZ" " -av"
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 566.09789928147938554"
+		"rotate" " -type \"double3\" 0 0 85.34614901729386816"
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl" 
 		"rotateX" " -av"
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl" 
@@ -248,8 +238,7 @@ createNode reference -n "Lamp_02_RigRN";
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl" 
 		"translateZ" " -av"
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl" 
-		"rotate" " -type \"double3\" -0.1274931973796995 -0.19299813332859167 -75.08205350568826475"
-		
+		"rotate" " -type \"double3\" 0 0 -67.47872191821686272"
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl" 
 		"rotateX" " -av"
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl" 
@@ -270,7 +259,7 @@ createNode reference -n "Lamp_02_RigRN";
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl" 
 		"translateZ" " -av"
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl" 
-		"rotate" " -type \"double3\" 0.77366166281263249 0.34000433372782385 -78.50643995751705972"
+		"rotate" " -type \"double3\" 0.50361478462793219 0.68214337637293565 -108.338675528184055"
 		
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl" 
 		"rotateX" " -av"
@@ -292,7 +281,7 @@ createNode reference -n "Lamp_02_RigRN";
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl|Lamp_02_Rig:Base_Ctrl_Grp|Lamp_02_Rig:Base_Ctrl" 
 		"translateZ" " -av"
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl|Lamp_02_Rig:Base_Ctrl_Grp|Lamp_02_Rig:Base_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 108.93503670159871888"
+		"rotate" " -type \"double3\" 0 0 19.11291062487226355"
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl|Lamp_02_Rig:Base_Ctrl_Grp|Lamp_02_Rig:Base_Ctrl" 
 		"rotateX" " -av"
 		2 "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl|Lamp_02_Rig:Base_Ctrl_Grp|Lamp_02_Rig:Base_Ctrl" 
@@ -305,54 +294,66 @@ createNode reference -n "Lamp_02_RigRN";
 		2 "Lamp_02_Rig:Joint_Layer" "visibility" " 1"
 		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02.visibility" "Lamp_02_RigRN.placeHolderList[1]" 
 		""
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02.scaleZ" "Lamp_02_RigRN.placeHolderList[2]" 
+		""
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02.scaleX" "Lamp_02_RigRN.placeHolderList[3]" 
+		""
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02.scaleY" "Lamp_02_RigRN.placeHolderList[4]" 
+		""
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02.translateZ" "Lamp_02_RigRN.placeHolderList[5]" 
+		""
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02.translateX" "Lamp_02_RigRN.placeHolderList[6]" 
+		""
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02.translateY" "Lamp_02_RigRN.placeHolderList[7]" 
+		""
 		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl.translateX" 
-		"Lamp_02_RigRN.placeHolderList[2]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl.translateY" 
-		"Lamp_02_RigRN.placeHolderList[3]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl.translateZ" 
-		"Lamp_02_RigRN.placeHolderList[4]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl.rotateX" 
-		"Lamp_02_RigRN.placeHolderList[5]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl.rotateY" 
-		"Lamp_02_RigRN.placeHolderList[6]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl.rotateZ" 
-		"Lamp_02_RigRN.placeHolderList[7]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl.translateX" 
 		"Lamp_02_RigRN.placeHolderList[8]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl.translateY" 
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl.translateY" 
 		"Lamp_02_RigRN.placeHolderList[9]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl.translateZ" 
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl.translateZ" 
 		"Lamp_02_RigRN.placeHolderList[10]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl.rotateX" 
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl.rotateX" 
 		"Lamp_02_RigRN.placeHolderList[11]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl.rotateY" 
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl.rotateY" 
 		"Lamp_02_RigRN.placeHolderList[12]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl.rotateZ" 
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl.rotateZ" 
 		"Lamp_02_RigRN.placeHolderList[13]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl.translateX" 
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl.translateX" 
 		"Lamp_02_RigRN.placeHolderList[14]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl.translateY" 
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl.translateY" 
 		"Lamp_02_RigRN.placeHolderList[15]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl.translateZ" 
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl.translateZ" 
 		"Lamp_02_RigRN.placeHolderList[16]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl.rotateX" 
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl.rotateX" 
 		"Lamp_02_RigRN.placeHolderList[17]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl.rotateY" 
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl.rotateY" 
 		"Lamp_02_RigRN.placeHolderList[18]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl.rotateZ" 
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl.rotateZ" 
 		"Lamp_02_RigRN.placeHolderList[19]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl|Lamp_02_Rig:Base_Ctrl_Grp|Lamp_02_Rig:Base_Ctrl.translateX" 
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl.translateX" 
 		"Lamp_02_RigRN.placeHolderList[20]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl|Lamp_02_Rig:Base_Ctrl_Grp|Lamp_02_Rig:Base_Ctrl.translateY" 
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl.translateY" 
 		"Lamp_02_RigRN.placeHolderList[21]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl|Lamp_02_Rig:Base_Ctrl_Grp|Lamp_02_Rig:Base_Ctrl.translateZ" 
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl.translateZ" 
 		"Lamp_02_RigRN.placeHolderList[22]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl|Lamp_02_Rig:Base_Ctrl_Grp|Lamp_02_Rig:Base_Ctrl.rotateX" 
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl.rotateX" 
 		"Lamp_02_RigRN.placeHolderList[23]" ""
-		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl|Lamp_02_Rig:Base_Ctrl_Grp|Lamp_02_Rig:Base_Ctrl.rotateY" 
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl.rotateY" 
 		"Lamp_02_RigRN.placeHolderList[24]" ""
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl.rotateZ" 
+		"Lamp_02_RigRN.placeHolderList[25]" ""
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl|Lamp_02_Rig:Base_Ctrl_Grp|Lamp_02_Rig:Base_Ctrl.translateX" 
+		"Lamp_02_RigRN.placeHolderList[26]" ""
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl|Lamp_02_Rig:Base_Ctrl_Grp|Lamp_02_Rig:Base_Ctrl.translateY" 
+		"Lamp_02_RigRN.placeHolderList[27]" ""
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl|Lamp_02_Rig:Base_Ctrl_Grp|Lamp_02_Rig:Base_Ctrl.translateZ" 
+		"Lamp_02_RigRN.placeHolderList[28]" ""
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl|Lamp_02_Rig:Base_Ctrl_Grp|Lamp_02_Rig:Base_Ctrl.rotateX" 
+		"Lamp_02_RigRN.placeHolderList[29]" ""
+		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl|Lamp_02_Rig:Base_Ctrl_Grp|Lamp_02_Rig:Base_Ctrl.rotateY" 
+		"Lamp_02_RigRN.placeHolderList[30]" ""
 		5 4 "Lamp_02_RigRN" "|Lamp_02_Rig:Lamp_02|Lamp_02_Rig:Controls|Lamp_02_Rig:Shade_Ctrl_Grp|Lamp_02_Rig:Shade_Ctrl|Lamp_02_Rig:UpperArm_Ctrl_Grp|Lamp_02_Rig:UpperArm_Ctrl|Lamp_02_Rig:LowerArm_Ctrl_Grp|Lamp_02_Rig:LowerArm_Ctrl|Lamp_02_Rig:Base_Ctrl_Grp|Lamp_02_Rig:Base_Ctrl.rotateZ" 
-		"Lamp_02_RigRN.placeHolderList[25]" "";
+		"Lamp_02_RigRN.placeHolderList[31]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode polyCylinder -n "polyCylinder1";
@@ -522,13 +523,13 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n"
 		+ "            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n"
 		+ "            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n"
-		+ "            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 656\n            -height 241\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 656\n            -height 240\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
 		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
 		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
-		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 656\n            -height 240\n"
+		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n"
 		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
 		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
 		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
@@ -633,7 +634,7 @@ createNode animCurveTU -n "Lower_Arm_Ctrl_visibility";
 	setAttr ".kot[0]"  5;
 createNode reference -n "Lamp_01_RigRN";
 	rename -uid "50027CB2-4F77-120B-C0C6-D887AFDFD5F2";
-	setAttr -s 29 ".phl";
+	setAttr -s 35 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -663,36 +664,28 @@ createNode reference -n "Lamp_01_RigRN";
 	setAttr ".phl[27]" 0;
 	setAttr ".phl[28]" 0;
 	setAttr ".phl[29]" 0;
+	setAttr ".phl[30]" 0;
+	setAttr ".phl[31]" 0;
+	setAttr ".phl[32]" 0;
+	setAttr ".phl[33]" 0;
+	setAttr ".phl[34]" 0;
+	setAttr ".phl[35]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Lamp_01_RigRN"
-		"Lamp_01_RigRN" 10
-		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Geometry|Lamp_01_Rig:Base_Geo|Lamp_01_Rig:Base_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Geometry|Lamp_01_Rig:Base_Geo|Lamp_01_Rig:Peg_Geo|Lamp_01_Rig:Peg_Geo_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Geometry|Lamp_01_Rig:LowerScrew_Geo|Lamp_01_Rig:LowerScrew_Geo_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Geometry|Lamp_01_Rig:LowerScrew_Geo|Lamp_01_Rig:LowerArm_Geo|Lamp_01_Rig:LowerArm_Geo_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Geometry|Lamp_01_Rig:UpperScrew_Geo|Lamp_01_Rig:UpperScrew_Geo_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Geometry|Lamp_01_Rig:UpperScrew_Geo|Lamp_01_Rig:UpperArm_Geo|Lamp_01_Rig:UpperArm_Geo_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Geometry|Lamp_01_Rig:Shade|Lamp_01_Rig:Shade_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Geometry|Lamp_01_Rig:Shade|Lamp_01_Rig:LightBulb|Lamp_01_Rig:LightBulb_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Geometry|Lamp_01_Rig:Shade|Lamp_01_Rig:LightBulb|Lamp_01_Rig:Bulb|Lamp_01_Rig:Bulb_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Geometry|Lamp_01_Rig:Shade|Lamp_01_Rig:LightBulb|Lamp_01_Rig:Filament|Lamp_01_Rig:Filament_Geo" 
-		"aiTranslator" " -type \"string\" \"polymesh\""
-		"Lamp_01_RigRN" 75
-		2 "|Lamp_01_Rig:Lamp" "visibility" " -av 0"
+		"Lamp_01_RigRN" 0
+		"Lamp_01_RigRN" 87
+		2 "|Lamp_01_Rig:Lamp" "visibility" " -av 1"
 		2 "|Lamp_01_Rig:Lamp" "translate" " -type \"double3\" 9.10498300614373335 0 0"
 		
-		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl" 
-		"translate" " -type \"double3\" 0.49742511018717817 -6.98378616337856695 -0.18374975282535924"
+		2 "|Lamp_01_Rig:Lamp" "translateY" " -av"
+		2 "|Lamp_01_Rig:Lamp" "translateZ" " -av"
+		2 "|Lamp_01_Rig:Lamp" "scale" " -type \"double3\" 2.53719329696153961 2.53719329696153961 2.53719329696153961"
 		
+		2 "|Lamp_01_Rig:Lamp" "scaleX" " -av"
+		2 "|Lamp_01_Rig:Lamp" "scaleY" " -av"
+		2 "|Lamp_01_Rig:Lamp" "scaleZ" " -av"
+		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl" 
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl" 
 		"translateX" " -av"
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl" 
@@ -700,8 +693,7 @@ createNode reference -n "Lamp_01_RigRN";
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl" 
 		"translateZ" " -av"
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl" 
-		"rotate" " -type \"double3\" -2.35811480080790759 -7.27869528016464162 -134.35612042827364121"
-		
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl" 
 		"rotateX" " -av"
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl" 
@@ -719,7 +711,7 @@ createNode reference -n "Lamp_01_RigRN";
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl" 
 		"translateZ" " -av"
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -2.24734936990987366"
+		"rotate" " -type \"double3\" 0 0 14.93302276448293142"
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl" 
 		"rotateX" " -av"
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl" 
@@ -737,7 +729,7 @@ createNode reference -n "Lamp_01_RigRN";
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl" 
 		"translateZ" " -av"
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 160.73617046756874061"
+		"rotate" " -type \"double3\" 0 0 -19.0049622070123192"
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl" 
 		"rotateX" " -av"
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl" 
@@ -753,7 +745,7 @@ createNode reference -n "Lamp_01_RigRN";
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl" 
 		"translateZ" " -av"
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 221.67446566419909004"
+		"rotate" " -type \"double3\" 0 0 33.55145458765136368"
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl" 
 		"rotateX" " -av"
 		2 "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl" 
@@ -782,62 +774,74 @@ createNode reference -n "Lamp_01_RigRN";
 		"aiTranslator" " -type \"string\" \"polymesh\""
 		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp.visibility" "Lamp_01_RigRN.placeHolderList[1]" 
 		""
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp.translateX" "Lamp_01_RigRN.placeHolderList[2]" 
+		""
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp.translateY" "Lamp_01_RigRN.placeHolderList[3]" 
+		""
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp.translateZ" "Lamp_01_RigRN.placeHolderList[4]" 
+		""
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp.scaleX" "Lamp_01_RigRN.placeHolderList[5]" 
+		""
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp.scaleY" "Lamp_01_RigRN.placeHolderList[6]" 
+		""
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp.scaleZ" "Lamp_01_RigRN.placeHolderList[7]" 
+		""
 		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl.translateX" 
-		"Lamp_01_RigRN.placeHolderList[2]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl.translateY" 
-		"Lamp_01_RigRN.placeHolderList[3]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl.translateZ" 
-		"Lamp_01_RigRN.placeHolderList[4]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl.rotateX" 
-		"Lamp_01_RigRN.placeHolderList[5]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl.rotateY" 
-		"Lamp_01_RigRN.placeHolderList[6]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl.rotateZ" 
-		"Lamp_01_RigRN.placeHolderList[7]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl.visibility" 
 		"Lamp_01_RigRN.placeHolderList[8]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl.translateX" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl.translateY" 
 		"Lamp_01_RigRN.placeHolderList[9]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl.translateY" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl.translateZ" 
 		"Lamp_01_RigRN.placeHolderList[10]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl.translateZ" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl.rotateX" 
 		"Lamp_01_RigRN.placeHolderList[11]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl.rotateX" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl.rotateY" 
 		"Lamp_01_RigRN.placeHolderList[12]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl.rotateY" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl.rotateZ" 
 		"Lamp_01_RigRN.placeHolderList[13]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl.rotateZ" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl.visibility" 
 		"Lamp_01_RigRN.placeHolderList[14]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl.visibility" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl.translateX" 
 		"Lamp_01_RigRN.placeHolderList[15]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl.translateX" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl.translateY" 
 		"Lamp_01_RigRN.placeHolderList[16]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl.translateY" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl.translateZ" 
 		"Lamp_01_RigRN.placeHolderList[17]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl.translateZ" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl.rotateX" 
 		"Lamp_01_RigRN.placeHolderList[18]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl.rotateX" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl.rotateY" 
 		"Lamp_01_RigRN.placeHolderList[19]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl.rotateY" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl.rotateZ" 
 		"Lamp_01_RigRN.placeHolderList[20]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl.rotateZ" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl.visibility" 
 		"Lamp_01_RigRN.placeHolderList[21]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl.visibility" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl.translateX" 
 		"Lamp_01_RigRN.placeHolderList[22]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl.translateX" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl.translateY" 
 		"Lamp_01_RigRN.placeHolderList[23]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl.translateY" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl.translateZ" 
 		"Lamp_01_RigRN.placeHolderList[24]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl.translateZ" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl.rotateX" 
 		"Lamp_01_RigRN.placeHolderList[25]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl.rotateX" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl.rotateY" 
 		"Lamp_01_RigRN.placeHolderList[26]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl.rotateY" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl.rotateZ" 
 		"Lamp_01_RigRN.placeHolderList[27]" ""
-		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl.rotateZ" 
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl.visibility" 
 		"Lamp_01_RigRN.placeHolderList[28]" ""
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl.translateX" 
+		"Lamp_01_RigRN.placeHolderList[29]" ""
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl.translateY" 
+		"Lamp_01_RigRN.placeHolderList[30]" ""
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl.translateZ" 
+		"Lamp_01_RigRN.placeHolderList[31]" ""
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl.rotateX" 
+		"Lamp_01_RigRN.placeHolderList[32]" ""
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl.rotateY" 
+		"Lamp_01_RigRN.placeHolderList[33]" ""
+		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl.rotateZ" 
+		"Lamp_01_RigRN.placeHolderList[34]" ""
 		5 4 "Lamp_01_RigRN" "|Lamp_01_Rig:Lamp|Lamp_01_Rig:Controls|Lamp_01_Rig:Base_Ctrl_Grp|Lamp_01_Rig:Base_Ctrl|Lamp_01_Rig:Lower_Arm_Ctrl_Grp|Lamp_01_Rig:Lower_Arm_Ctrl|Lamp_01_Rig:Upper_Arm_Ctrl_Grp|Lamp_01_Rig:Upper_Arm_Ctrl|Lamp_01_Rig:Shade_Ctrl_Grp|Lamp_01_Rig:Shade_Ctrl.visibility" 
-		"Lamp_01_RigRN.placeHolderList[29]" "";
+		"Lamp_01_RigRN.placeHolderList[35]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode animCurveTA -n "Shade_Ctrl_rotateZ1";
@@ -1111,7 +1115,7 @@ createNode animCurveTA -n "UpperArm_Ctrl_rotateZ";
 	setAttr -s 21 ".ktv[0:20]"  42 -67.478721918216863 47 19.053849829876782
 		 50 19.053849829876782 55 19.053849829876782 63 -8.7342848908241582 67 26.909260742830213
 		 70 9.0011971529890982 71 -62.765990712171124 74 -69.825379091886191 76 -69.825379091886191
-		 78 -110.43566988335543 81 -110.43566988335543 83 -110.43566988335543 85 -110.43566988335543
+		 78 -110.43566988335544 81 -110.43566988335544 83 -110.43566988335544 85 -110.43566988335544
 		 89 -78.560513464205897 92 -71.659065442996848 93 -71.659065442996848 98 -55.659278289734885
 		 102 -76.759611033606689 104 -63.318414095414369 106 -75.082053505688265;
 	setAttr -s 21 ".kit[16:20]"  1 18 18 18 18;
@@ -1226,7 +1230,7 @@ createNode animCurveTA -n "LowerArm_Ctrl_rotateX";
 		 70 0.84388095252532025 71 0.20995181588668152 74 -0.14125644689547684 76 0.21038459527627532
 		 78 -0.23901760216725582 81 -0.48705105503750812 83 -0.79466600770553342 85 -0.79466600770553342
 		 89 0.2809282113972153 92 0.62298483905368351 93 0.62298483905368351 98 0.82967935329356113
-		 102 0.75682971198977744 106 0.84503574644171753 110 0.72184167654403397 113 0.79179865800664151
+		 102 0.75682971198977744 106 0.84503574644171753 110 0.72184167654403408 113 0.79179865800664151
 		 116 0.72402619137479041;
 	setAttr -s 23 ".kit[16:22]"  1 18 18 18 18 18 18;
 	setAttr -s 23 ".kot[16:22]"  1 18 18 18 18 18 18;
@@ -1278,7 +1282,7 @@ createNode animCurveTA -n "Base_Ctrl_rotateZ2";
 		 50 105.64548237296603 55 50.731216038392368 63 -1.9075679687762492 67 96.501217626246415
 		 70 1.0028846561473772 71 -25.370808054460383 74 -7.4277589347111963 76 -22.997768981040231
 		 78 1.5252878493233861 81 -8.9498778890355339 83 -8.9498778890355339 85 -8.9498778890355339
-		 89 13.92988279578308 92 81.7658790387907 93 81.7658790387907 98 78.052515208553473
+		 89 13.929882795783081 92 81.7658790387907 93 81.7658790387907 98 78.052515208553473
 		 102 108.93503670159872 104 108.93503670159872 106 108.93503670159872;
 	setAttr -s 21 ".kit[16:20]"  1 18 18 18 18;
 	setAttr -s 21 ".kot[16:20]"  1 18 18 18 18;
@@ -1346,9 +1350,81 @@ createNode animCurveTL -n "Base_Ctrl_translateX2";
 	setAttr -s 21 ".kiy[16:20]"  0 0 0 0 0;
 	setAttr -s 21 ".kox[16:20]"  1 1 1 1 1;
 	setAttr -s 21 ".koy[16:20]"  0 0 0 0 0;
+createNode animCurveTU -n "Lamp_02_scaleX";
+	rename -uid "8B3E927D-405F-9F93-A9EF-EBB53EFCAEC6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 2.537 42 2.537;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTU -n "Lamp_02_scaleY";
+	rename -uid "ECD85B2E-4DD0-18A2-6582-18ACBD319B22";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 2.537 42 2.537;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTU -n "Lamp_02_scaleZ";
+	rename -uid "9609703F-41BF-E6E0-DF8E-6F8D30386B46";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 2.537 42 2.537;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTU -n "Lamp_scaleX";
+	rename -uid "2B679C49-4CEC-29A6-6D05-53A9FEC0211B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 2.5371932969615396 42 2.537;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTU -n "Lamp_scaleY";
+	rename -uid "23D89267-4520-5DCB-A9F5-3D849ECC7CEA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 2.5371932969615396 42 2.537;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTU -n "Lamp_scaleZ";
+	rename -uid "9B8D0EAA-4140-72A4-298A-AA99370CE011";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 2.5371932969615396 42 2.537;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTL -n "Lamp_02_translateX";
+	rename -uid "78574399-4570-76E3-336E-388BC702A1BB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 100 42 0;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTL -n "Lamp_02_translateY";
+	rename -uid "43A2F472-4330-4C74-0921-34839CF49AE3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 100 42 0;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTL -n "Lamp_02_translateZ";
+	rename -uid "98D4C944-4E3A-B302-AFEA-FAA70FB5F120";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 100 42 0;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTL -n "Lamp_translateX";
+	rename -uid "4D357AB5-4019-4ADA-96E4-6695BDB1ADFC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 9.1049830061437333 42 9.1049830061437333;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTL -n "Lamp_translateY";
+	rename -uid "505ED32E-4818-B07B-12E0-25B5109FC118";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 42 100;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTL -n "Lamp_translateZ";
+	rename -uid "B35BA709-4EB0-31E3-019C-BAAF82EFFAD3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 42 100;
+	setAttr -s 2 ".kot[0:1]"  5 5;
 select -ne :time1;
-	setAttr ".o" 112;
-	setAttr ".unw" 112;
+	setAttr ".o" 6;
+	setAttr ".unw" 6;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -1379,62 +1455,72 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".btrs" 512;
 select -ne :defaultHideFaceDataSet;
 	setAttr -s 2 ".dnsm";
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "Lamp_02_visibility.o" "Lamp_02_RigRN.phl[1]";
-connectAttr "Shade_Ctrl_translateX2.o" "Lamp_02_RigRN.phl[2]";
-connectAttr "Shade_Ctrl_translateY2.o" "Lamp_02_RigRN.phl[3]";
-connectAttr "Shade_Ctrl_translateZ2.o" "Lamp_02_RigRN.phl[4]";
-connectAttr "Shade_Ctrl_rotateX2.o" "Lamp_02_RigRN.phl[5]";
-connectAttr "Shade_Ctrl_rotateY2.o" "Lamp_02_RigRN.phl[6]";
-connectAttr "Shade_Ctrl_rotateZ2.o" "Lamp_02_RigRN.phl[7]";
-connectAttr "UpperArm_Ctrl_translateX.o" "Lamp_02_RigRN.phl[8]";
-connectAttr "UpperArm_Ctrl_translateY.o" "Lamp_02_RigRN.phl[9]";
-connectAttr "UpperArm_Ctrl_translateZ.o" "Lamp_02_RigRN.phl[10]";
-connectAttr "UpperArm_Ctrl_rotateX.o" "Lamp_02_RigRN.phl[11]";
-connectAttr "UpperArm_Ctrl_rotateY.o" "Lamp_02_RigRN.phl[12]";
-connectAttr "UpperArm_Ctrl_rotateZ.o" "Lamp_02_RigRN.phl[13]";
-connectAttr "LowerArm_Ctrl_translateX.o" "Lamp_02_RigRN.phl[14]";
-connectAttr "LowerArm_Ctrl_translateY.o" "Lamp_02_RigRN.phl[15]";
-connectAttr "LowerArm_Ctrl_translateZ.o" "Lamp_02_RigRN.phl[16]";
-connectAttr "LowerArm_Ctrl_rotateX.o" "Lamp_02_RigRN.phl[17]";
-connectAttr "LowerArm_Ctrl_rotateY.o" "Lamp_02_RigRN.phl[18]";
-connectAttr "LowerArm_Ctrl_rotateZ.o" "Lamp_02_RigRN.phl[19]";
-connectAttr "Base_Ctrl_translateX2.o" "Lamp_02_RigRN.phl[20]";
-connectAttr "Base_Ctrl_translateY2.o" "Lamp_02_RigRN.phl[21]";
-connectAttr "Base_Ctrl_translateZ2.o" "Lamp_02_RigRN.phl[22]";
-connectAttr "Base_Ctrl_rotateX2.o" "Lamp_02_RigRN.phl[23]";
-connectAttr "Base_Ctrl_rotateY2.o" "Lamp_02_RigRN.phl[24]";
-connectAttr "Base_Ctrl_rotateZ2.o" "Lamp_02_RigRN.phl[25]";
+connectAttr "Lamp_02_scaleZ.o" "Lamp_02_RigRN.phl[2]";
+connectAttr "Lamp_02_scaleX.o" "Lamp_02_RigRN.phl[3]";
+connectAttr "Lamp_02_scaleY.o" "Lamp_02_RigRN.phl[4]";
+connectAttr "Lamp_02_translateZ.o" "Lamp_02_RigRN.phl[5]";
+connectAttr "Lamp_02_translateX.o" "Lamp_02_RigRN.phl[6]";
+connectAttr "Lamp_02_translateY.o" "Lamp_02_RigRN.phl[7]";
+connectAttr "Shade_Ctrl_translateX2.o" "Lamp_02_RigRN.phl[8]";
+connectAttr "Shade_Ctrl_translateY2.o" "Lamp_02_RigRN.phl[9]";
+connectAttr "Shade_Ctrl_translateZ2.o" "Lamp_02_RigRN.phl[10]";
+connectAttr "Shade_Ctrl_rotateX2.o" "Lamp_02_RigRN.phl[11]";
+connectAttr "Shade_Ctrl_rotateY2.o" "Lamp_02_RigRN.phl[12]";
+connectAttr "Shade_Ctrl_rotateZ2.o" "Lamp_02_RigRN.phl[13]";
+connectAttr "UpperArm_Ctrl_translateX.o" "Lamp_02_RigRN.phl[14]";
+connectAttr "UpperArm_Ctrl_translateY.o" "Lamp_02_RigRN.phl[15]";
+connectAttr "UpperArm_Ctrl_translateZ.o" "Lamp_02_RigRN.phl[16]";
+connectAttr "UpperArm_Ctrl_rotateX.o" "Lamp_02_RigRN.phl[17]";
+connectAttr "UpperArm_Ctrl_rotateY.o" "Lamp_02_RigRN.phl[18]";
+connectAttr "UpperArm_Ctrl_rotateZ.o" "Lamp_02_RigRN.phl[19]";
+connectAttr "LowerArm_Ctrl_translateX.o" "Lamp_02_RigRN.phl[20]";
+connectAttr "LowerArm_Ctrl_translateY.o" "Lamp_02_RigRN.phl[21]";
+connectAttr "LowerArm_Ctrl_translateZ.o" "Lamp_02_RigRN.phl[22]";
+connectAttr "LowerArm_Ctrl_rotateX.o" "Lamp_02_RigRN.phl[23]";
+connectAttr "LowerArm_Ctrl_rotateY.o" "Lamp_02_RigRN.phl[24]";
+connectAttr "LowerArm_Ctrl_rotateZ.o" "Lamp_02_RigRN.phl[25]";
+connectAttr "Base_Ctrl_translateX2.o" "Lamp_02_RigRN.phl[26]";
+connectAttr "Base_Ctrl_translateY2.o" "Lamp_02_RigRN.phl[27]";
+connectAttr "Base_Ctrl_translateZ2.o" "Lamp_02_RigRN.phl[28]";
+connectAttr "Base_Ctrl_rotateX2.o" "Lamp_02_RigRN.phl[29]";
+connectAttr "Base_Ctrl_rotateY2.o" "Lamp_02_RigRN.phl[30]";
+connectAttr "Base_Ctrl_rotateZ2.o" "Lamp_02_RigRN.phl[31]";
 connectAttr "Lamp_visibility.o" "Lamp_01_RigRN.phl[1]";
-connectAttr "Base_Ctrl_translateX1.o" "Lamp_01_RigRN.phl[2]";
-connectAttr "Base_Ctrl_translateY1.o" "Lamp_01_RigRN.phl[3]";
-connectAttr "Base_Ctrl_translateZ1.o" "Lamp_01_RigRN.phl[4]";
-connectAttr "Base_Ctrl_rotateX1.o" "Lamp_01_RigRN.phl[5]";
-connectAttr "Base_Ctrl_rotateY1.o" "Lamp_01_RigRN.phl[6]";
-connectAttr "Base_Ctrl_rotateZ1.o" "Lamp_01_RigRN.phl[7]";
-connectAttr "Base_Ctrl_visibility.o" "Lamp_01_RigRN.phl[8]";
-connectAttr "Lower_Arm_Ctrl_translateX1.o" "Lamp_01_RigRN.phl[9]";
-connectAttr "Lower_Arm_Ctrl_translateY1.o" "Lamp_01_RigRN.phl[10]";
-connectAttr "Lower_Arm_Ctrl_translateZ1.o" "Lamp_01_RigRN.phl[11]";
-connectAttr "Lower_Arm_Ctrl_rotateX1.o" "Lamp_01_RigRN.phl[12]";
-connectAttr "Lower_Arm_Ctrl_rotateY1.o" "Lamp_01_RigRN.phl[13]";
-connectAttr "Lower_Arm_Ctrl_rotateZ1.o" "Lamp_01_RigRN.phl[14]";
-connectAttr "Lower_Arm_Ctrl_visibility1.o" "Lamp_01_RigRN.phl[15]";
-connectAttr "Upper_Arm_Ctrl_translateX1.o" "Lamp_01_RigRN.phl[16]";
-connectAttr "Upper_Arm_Ctrl_translateY1.o" "Lamp_01_RigRN.phl[17]";
-connectAttr "Upper_Arm_Ctrl_translateZ1.o" "Lamp_01_RigRN.phl[18]";
-connectAttr "Upper_Arm_Ctrl_rotateX1.o" "Lamp_01_RigRN.phl[19]";
-connectAttr "Upper_Arm_Ctrl_rotateY1.o" "Lamp_01_RigRN.phl[20]";
-connectAttr "Upper_Arm_Ctrl_rotateZ1.o" "Lamp_01_RigRN.phl[21]";
-connectAttr "Upper_Arm_Ctrl_visibility.o" "Lamp_01_RigRN.phl[22]";
-connectAttr "Shade_Ctrl_translateX1.o" "Lamp_01_RigRN.phl[23]";
-connectAttr "Shade_Ctrl_translateY1.o" "Lamp_01_RigRN.phl[24]";
-connectAttr "Shade_Ctrl_translateZ1.o" "Lamp_01_RigRN.phl[25]";
-connectAttr "Shade_Ctrl_rotateX1.o" "Lamp_01_RigRN.phl[26]";
-connectAttr "Shade_Ctrl_rotateY1.o" "Lamp_01_RigRN.phl[27]";
-connectAttr "Shade_Ctrl_rotateZ1.o" "Lamp_01_RigRN.phl[28]";
-connectAttr "Shade_Ctrl_visibility.o" "Lamp_01_RigRN.phl[29]";
+connectAttr "Lamp_translateX.o" "Lamp_01_RigRN.phl[2]";
+connectAttr "Lamp_translateY.o" "Lamp_01_RigRN.phl[3]";
+connectAttr "Lamp_translateZ.o" "Lamp_01_RigRN.phl[4]";
+connectAttr "Lamp_scaleX.o" "Lamp_01_RigRN.phl[5]";
+connectAttr "Lamp_scaleY.o" "Lamp_01_RigRN.phl[6]";
+connectAttr "Lamp_scaleZ.o" "Lamp_01_RigRN.phl[7]";
+connectAttr "Base_Ctrl_translateX1.o" "Lamp_01_RigRN.phl[8]";
+connectAttr "Base_Ctrl_translateY1.o" "Lamp_01_RigRN.phl[9]";
+connectAttr "Base_Ctrl_translateZ1.o" "Lamp_01_RigRN.phl[10]";
+connectAttr "Base_Ctrl_rotateX1.o" "Lamp_01_RigRN.phl[11]";
+connectAttr "Base_Ctrl_rotateY1.o" "Lamp_01_RigRN.phl[12]";
+connectAttr "Base_Ctrl_rotateZ1.o" "Lamp_01_RigRN.phl[13]";
+connectAttr "Base_Ctrl_visibility.o" "Lamp_01_RigRN.phl[14]";
+connectAttr "Lower_Arm_Ctrl_translateX1.o" "Lamp_01_RigRN.phl[15]";
+connectAttr "Lower_Arm_Ctrl_translateY1.o" "Lamp_01_RigRN.phl[16]";
+connectAttr "Lower_Arm_Ctrl_translateZ1.o" "Lamp_01_RigRN.phl[17]";
+connectAttr "Lower_Arm_Ctrl_rotateX1.o" "Lamp_01_RigRN.phl[18]";
+connectAttr "Lower_Arm_Ctrl_rotateY1.o" "Lamp_01_RigRN.phl[19]";
+connectAttr "Lower_Arm_Ctrl_rotateZ1.o" "Lamp_01_RigRN.phl[20]";
+connectAttr "Lower_Arm_Ctrl_visibility1.o" "Lamp_01_RigRN.phl[21]";
+connectAttr "Upper_Arm_Ctrl_translateX1.o" "Lamp_01_RigRN.phl[22]";
+connectAttr "Upper_Arm_Ctrl_translateY1.o" "Lamp_01_RigRN.phl[23]";
+connectAttr "Upper_Arm_Ctrl_translateZ1.o" "Lamp_01_RigRN.phl[24]";
+connectAttr "Upper_Arm_Ctrl_rotateX1.o" "Lamp_01_RigRN.phl[25]";
+connectAttr "Upper_Arm_Ctrl_rotateY1.o" "Lamp_01_RigRN.phl[26]";
+connectAttr "Upper_Arm_Ctrl_rotateZ1.o" "Lamp_01_RigRN.phl[27]";
+connectAttr "Upper_Arm_Ctrl_visibility.o" "Lamp_01_RigRN.phl[28]";
+connectAttr "Shade_Ctrl_translateX1.o" "Lamp_01_RigRN.phl[29]";
+connectAttr "Shade_Ctrl_translateY1.o" "Lamp_01_RigRN.phl[30]";
+connectAttr "Shade_Ctrl_translateZ1.o" "Lamp_01_RigRN.phl[31]";
+connectAttr "Shade_Ctrl_rotateX1.o" "Lamp_01_RigRN.phl[32]";
+connectAttr "Shade_Ctrl_rotateY1.o" "Lamp_01_RigRN.phl[33]";
+connectAttr "Shade_Ctrl_rotateZ1.o" "Lamp_01_RigRN.phl[34]";
+connectAttr "Shade_Ctrl_visibility.o" "Lamp_01_RigRN.phl[35]";
 connectAttr "layer1.di" "pCylinder1.do";
 connectAttr "polyCylinder1.out" "pCylinderShape1.i";
 connectAttr "layer1.di" "pPlane1.do";
