@@ -1,10 +1,9 @@
 //Maya ASCII 2018 scene
 //Name: Max_Rig.ma
-//Last modified: Thu, Mar 14, 2019 10:24:17 AM
+//Last modified: Tue, Mar 26, 2019 11:33:53 AM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
-requires "mtoa" "3.1.1.1";
 requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t pal;
 fileInfo "application" "maya";
@@ -16,8 +15,8 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "BC471737-4675-73A4-1DAD-47AE8A419051";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.14289066964961883 151.63590621360794 83.031604953509259 ;
-	setAttr ".r" -type "double3" -5.3999999999999924 -0.80000000000011218 6.2126264441508964e-18 ;
+	setAttr ".t" -type "double3" 163.27331645524086 166.29365573014036 56.595527353686826 ;
+	setAttr ".r" -type "double3" -6.6000000000002323 56.000000000001315 0 ;
 	setAttr ".rp" -type "double3" 0 7.1054273576010019e-15 -3.6765295668983455e-15 ;
 	setAttr ".rpt" -type "double3" 6.4131948021304738e-15 4.8920880498959092e-14 6.2374773253869218e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -25,7 +24,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
 	setAttr ".ncp" 1;
-	setAttr ".coi" 59.441934586130131;
+	setAttr ".coi" 133.33491370875751;
 	setAttr ".ow" 526.71127452674853;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -26666,7 +26665,7 @@ createNode parentConstraint -n "dummyThumb3L_Grp_parentConstraint1" -p "dummyThu
 		5.2523885910823144e-14 ;
 	setAttr ".tg[0].tor" -type "double3" 2.2703976260683536e-14 4.3515954499643491e-14 
 		-3.7839960434472597e-15 ;
-	setAttr ".lr" -type "double3" -23.199803063123213 130.69257536330727 -56.959932924319318 ;
+	setAttr ".lr" -type "double3" -14.096288878934701 162.16010306060096 -39.340178526279857 ;
 	setAttr ".rst" -type "double3" 108.54739188865098 178.6321512829152 10.297921932782355 ;
 	setAttr ".rsrr" -type "double3" -14.496656418054116 162.47476427682091 -39.458309289431689 ;
 	setAttr -k on ".w0";
@@ -27016,7 +27015,7 @@ createNode parentConstraint -n "dummyThumb2L_Grp_parentConstraint1" -p "dummyThu
 	setAttr ".tg[0].tot" -type "double3" 0.019853780617229987 0.036270343401265566 0.024284970025011322 ;
 	setAttr ".tg[0].tor" -type "double3" 2.2703976260683539e-14 4.5407952521367123e-14 
 		-3.7839960434472605e-15 ;
-	setAttr ".lr" -type "double3" -16.361112290170219 155.7567431060034 -45.830984931655124 ;
+	setAttr ".lr" -type "double3" -14.096288878934701 162.16010306060096 -39.340178526279857 ;
 	setAttr ".rst" -type "double3" 105.29149874441838 181.3120861075557 8.966273866451683 ;
 	setAttr ".rsrr" -type "double3" -14.496656418054116 162.47476427682091 -39.458309289431689 ;
 	setAttr -k on ".w0";
@@ -27367,7 +27366,7 @@ createNode parentConstraint -n "dummyThumb1L_Grp_parentConstraint1" -p "dummyThu
 		3.2647448154681762e-14 ;
 	setAttr ".tg[0].tor" -type "double3" 3.2163966369301678e-14 3.7839960434472597e-15 
 		-5.6759940651708905e-14 ;
-	setAttr ".lr" -type "double3" -19.30117929475124 156.37335019782785 -46.423616242339243 ;
+	setAttr ".lr" -type "double3" -17.369003515070311 158.90055678618882 -40.986410577719866 ;
 	setAttr ".rst" -type "double3" 99.877040394371051 186.03961728948261 6.2396027984002957 ;
 	setAttr ".rsrr" -type "double3" -17.767510151221675 159.22611416460262 -41.125333264249115 ;
 	setAttr -k on ".w0";
@@ -45010,7 +45009,6 @@ createNode transform -n "thumbFingerL_Ctrl" -p "thumbFingerL_Grp";
 	setAttr -l on -k off ".tx";
 	setAttr -l on -k off ".ty";
 	setAttr -l on -k off ".tz";
-	setAttr ".r" -type "double3" 0 0 -26.535915846265521 ;
 	setAttr -l on -k off ".rx";
 	setAttr -l on -k off ".ry";
 	setAttr -l on -k off ".sx";
@@ -49586,10 +49584,10 @@ createNode transform -n "key_Light" -p "light_Grp";
 	setAttr ".r" -type "double3" -37.879865325666721 -17.710313927964563 -4.9247165454445902e-14 ;
 	setAttr ".s" -type "double3" 50 50 50 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "5103D1A2-4052-EFB4-75EB-75A8CE0397DB";
+	rename -uid "75046408-43EE-787D-8D7D-B29FB91C74AB";
 	setAttr -s 8 ".lnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "FEFB12E4-470A-9C3E-C1BA-1DB0C889C6F0";
+	rename -uid "96758888-46B6-5B5F-37BB-21BAA9C7BCDD";
 	setAttr ".cdl" 13;
 	setAttr -s 13 ".dli[1:12]"  13 3 2 4 9 5 6 7 
 		8 10 11 12;
@@ -49597,7 +49595,7 @@ createNode displayLayerManager -n "layerManager";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "ADACBB54-40A1-F479-7AA0-22A9FC9EA874";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "712694A4-4DC1-500E-AA50-DD84E7134E46";
+	rename -uid "04E0327D-4A6A-BA13-3DA4-F69D817309E9";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "BE670DE7-496A-865F-5B0C-C990D84F0C3F";
 	setAttr ".g" yes;
@@ -57846,7 +57844,6 @@ createNode displayLayer -n "dummyLegL";
 createNode displayLayer -n "dummyMesh";
 	rename -uid "EE2A46C3-47EC-7E80-CB05-42B7BCBCC8DF";
 	setAttr ".dt" 2;
-	setAttr ".v" no;
 	setAttr ".do" 18;
 createNode animCurveUU -n "hipBind_Joint_orientConstraint1_hip_CtrlW0";
 	rename -uid "F33F7D44-4E74-D36C-0D5A-27B5E650551A";
@@ -65047,12 +65044,12 @@ createNode blendColors -n "eyeScaleLBlend";
 createNode blendColors -n "eyeScaleRBlend";
 	rename -uid "AF3F200A-4475-A9D9-D15A-BFA0E8042627";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "C6E50137-4672-B82A-B037-6B91819A8032";
+	rename -uid "11F8192C-456F-2EAC-0B1D-609C580958EE";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 3 0 1 2 ;
 	setAttr -s 3 ".bspr";
 	setAttr -s 3 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "18E79A34-4055-6745-8AEF-FD87012297F1";
+	rename -uid "75B6C8BE-4995-A166-C187-EF8F0EFD8986";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	rename -uid "6760F17B-4F8C-5A53-CD5C-65843BAEFB0C";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
@@ -65104,6 +65101,7 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 createNode displayLayer -n "Jnt_Layer";
 	rename -uid "4235FF89-45CB-0386-89B8-D8BE97CE63CF";
 	setAttr ".dt" 2;
+	setAttr ".v" no;
 	setAttr ".do" 22;
 select -ne :time1;
 	setAttr -av -k on ".cch";
@@ -65326,7 +65324,7 @@ select -ne :hardwareRenderGlobals;
 	setAttr -k on ".hwql";
 	setAttr -k on ".hwfr" 25;
 select -ne :ikSystem;
-	setAttr -s 4 ".sol";
+	setAttr -s 2 ".sol";
 connectAttr "smoothMesh.di" "bodySkin_Geo.do";
 connectAttr "groupId49.id" "bodySkin_GeoShape.iog.og[22].gid";
 connectAttr "body_SG.mwc" "bodySkin_GeoShape.iog.og[22].gco";
