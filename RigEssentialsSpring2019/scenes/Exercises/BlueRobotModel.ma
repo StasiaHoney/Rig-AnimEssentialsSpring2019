@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: BlueRobotModel.ma
-//Last modified: Mon, Mar 25, 2019 10:22:44 PM
+//Last modified: Mon, Mar 25, 2019 10:23:16 PM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -15,8 +15,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "AC760D58-4B8D-DD36-9CC3-1FB146F273E4";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.3688933529753966 9.4818734511535627 29.092996356566559 ;
-	setAttr ".r" -type "double3" -5.4015106241236133 1.1473684210379147 -6.2132666268809027e-18 ;
+	setAttr ".t" -type "double3" 19.171413698161203 11.796371785163307 22.81322811743615 ;
+	setAttr ".r" -type "double3" -9.6015106241235699 35.947368421037964 4.9109517543106191e-16 ;
 	setAttr ".rp" -type "double3" 1.3322676295501878e-15 8.8817841970012523e-16 -1.7763568394002505e-15 ;
 	setAttr ".rpt" -type "double3" 9.7046464832912619e-17 1.2409828774164385e-15 1.3691630494556818e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -36111,7 +36111,7 @@ createNode parentConstraint -n "L_Elbow_Surface_Geo_parentConstraint1" -p "L_Elb
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 1.312521171979081 0.031662051614045783 -0.0045920859486052734 ;
 	setAttr ".tg[0].tor" -type "double3" 178.13108546815047 -67.738506018230311 -86.551844119280915 ;
-	setAttr ".lr" -type "double3" -3.1805546814635168e-15 -3.1805546814635168e-15 6.3611093629270335e-15 ;
+	setAttr ".lr" -type "double3" -7.2267655105797013e-07 1.129963047614752e-15 -3.2515306039020908e-07 ;
 	setAttr ".rst" -type "double3" 4.4408920985006262e-16 0 6.6868168988043486e-17 ;
 	setAttr ".rsrr" -type "double3" -3.1805546814635168e-15 -3.1805546814635168e-15 
 		6.3611093629270335e-15 ;
@@ -36135,7 +36135,7 @@ createNode parentConstraint -n "L_Shoulder_Surface_Geo_parentConstraint1" -p "L_
 	setAttr ".tg[0].tot" -type "double3" 2.4366440198875239e-05 -7.236787935571698e-07 
 		1.7132024465738027e-06 ;
 	setAttr ".tg[0].tor" -type "double3" 176.74590862475898 -67.735484487460383 -86.539884703784764 ;
-	setAttr ".lr" -type "double3" 6.3611093629270351e-15 -3.1805546814635176e-15 -3.1805546814635176e-15 ;
+	setAttr ".lr" -type "double3" -7.2267671718128222e-07 3.1644089694512794e-05 -3.2515306912178686e-07 ;
 	setAttr ".rst" -type "double3" -4.4408920985006262e-16 0 2.4856135349627338e-16 ;
 	setAttr ".rsrr" -type "double3" 6.3611093629270351e-15 -3.1805546814635176e-15 -3.1805546814635176e-15 ;
 	setAttr -k on ".w0";
@@ -43043,7 +43043,7 @@ createNode parentConstraint -n "Waist_JNT_parentConstraint1" -p "Waist_JNT";
 createNode joint -n "Right_Arm_01_JNT" -p "Waist_JNT";
 	rename -uid "8F6E5A41-42FE-CF24-7C4C-7B84BCD619A7";
 	setAttr ".t" -type "double3" 6.1324933579559593 1.2438685742695299e-05 -3.5521599991090032 ;
-	setAttr ".r" -type "double3" -22.226573888061683 0.24192762395379033 0.048318272036454515 ;
+	setAttr ".r" -type "double3" -22.226605540093406 0.24192797748773703 0.048318273155138786 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jot" -type "string" "xzy";
@@ -43171,7 +43171,7 @@ createNode parentConstraint -n "Right_Wrist_JNT_parentConstraint1" -p "Right_Wri
 	setAttr ".tg[0].tot" -type "double3" -0.00035988212585058577 -1.5994072732894438e-08 
 		1.0907700437323697e-09 ;
 	setAttr ".tg[0].tor" -type "double3" -90.022743082243366 -1.2670149279812588 -88.971559912453927 ;
-	setAttr ".lr" -type "double3" 6.3799395511656786e-15 5.923161892139578e-15 -6.5847421139674373e-15 ;
+	setAttr ".lr" -type "double3" 3.1651414209157397e-05 3.7474645048512566e-07 1.5473876076095399e-07 ;
 	setAttr ".rst" -type "double3" 8.8817841970012523e-16 0 4.4408920985006262e-16 ;
 	setAttr ".rsrr" -type "double3" 6.3799395511656786e-15 5.923161892139578e-15 -6.5847421139674373e-15 ;
 	setAttr -k on ".w0";
@@ -43420,6 +43420,10 @@ createNode poleVectorConstraint -n "ikHandle5_poleVectorConstraint1" -p "ikHandl
 	setAttr -k on ".w0";
 createNode ikHandle -n "ikHandle6" -p "Spine_JNT";
 	rename -uid "C5B6254E-48C2-D6FF-3F78-B7B84D3640E3";
+	setAttr ".t" -type "double3" 0.82317431660548568 -0.08649822949532765 -3.6905418557215657 ;
+	setAttr -av ".tx";
+	setAttr -av ".ty";
+	setAttr -av ".tz";
 	setAttr ".s" -type "double3" 1 0.99999999999999989 1 ;
 	setAttr ".roc" yes;
 createNode parentConstraint -n "ikHandle6_parentConstraint1" -p "ikHandle6";
