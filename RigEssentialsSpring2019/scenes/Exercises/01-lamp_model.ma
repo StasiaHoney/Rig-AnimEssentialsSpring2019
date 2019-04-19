@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: 01-lamp_model.ma
-//Last modified: Tue, Apr 16, 2019 09:35:41 PM
+//Last modified: Wed, Apr 17, 2019 10:23:38 PM
 //Codeset: 1252
 requires maya "2018";
 requires -nodeType "gameFbxExporter" "gameFbxExporter" "1.0";
@@ -1144,7 +1144,7 @@ createNode mesh -n "upper_arm_geoShape" -p "upper_arm_geo";
 	setAttr -s 2 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.49999997019767761 0.68843984603881836 ;
+	setAttr ".pv" -type "double2" 0.5 0.49687500298023224 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -2262,7 +2262,7 @@ createNode parentConstraint -n "head_geo_parentConstraint1" -p "head_geo";
 		5.395272398289741e-08 ;
 	setAttr ".tg[0].tor" -type "double3" 0.43443386829907188 -3.1603566596489368e-06 
 		-49.603494811704643 ;
-	setAttr ".lr" -type "double3" 20.089244969825788 -4.3474618440348989 -58.304603815433936 ;
+	setAttr ".lr" -type "double3" 6.9187306460968028 3.8621777712777212 -55.644388919446307 ;
 	setAttr ".rst" -type "double3" 1.5543122344752192e-15 -3.5527136788005009e-15 3.9898639947466563e-16 ;
 	setAttr ".rsrr" -type "double3" -9.9392333795734874e-17 -1.2424041724466865e-17 
 		-6.3616917398828667e-15 ;
@@ -2286,7 +2286,7 @@ createNode parentConstraint -n "upper_arm_geo_parentConstraint1" -p "upper_arm_g
 		-4.163336342344337e-16 ;
 	setAttr ".tg[0].tor" -type "double3" 2.4257267004560614e-06 0.43443471377453086 
 		-50.312031921930661 ;
-	setAttr ".lr" -type "double3" 4.7384467606126648e-16 -8.1462821652732487e-15 20.822125604306514 ;
+	setAttr ".lr" -type "double3" -1.4641582614834048e-15 5.5124629332545686e-15 15.336499869832979 ;
 	setAttr ".rst" -type "double3" 0 -7.1054273576010019e-15 -1.3877787807814457e-17 ;
 	setAttr ".rsrr" -type "double3" -5.5178038154698458e-33 -9.9392333795734899e-17 
 		6.3615946770568957e-15 ;
@@ -2309,7 +2309,7 @@ createNode parentConstraint -n "lower_arm_geo_parentConstraint1" -p "lower_arm_g
 	setAttr ".tg[0].tot" -type "double3" 0 -2.886579864025407e-15 1.7347234759768071e-17 ;
 	setAttr ".tg[0].tor" -type "double3" 0.43443397904735498 -1.580178329677073e-06 
 		-130.99102657132812 ;
-	setAttr ".lr" -type "double3" -2.1168525230677702 7.0721471721604718 -11.015288641840455 ;
+	setAttr ".lr" -type "double3" 1.4959222971559394 -6.3137443262563 -8.0907734391471227 ;
 	setAttr ".rst" -type "double3" 1.3345553913008914e-15 8.8817841970012523e-16 1.7347234759768071e-18 ;
 	setAttr ".rsrr" -type "double3" 7.0262841323173937e-17 9.5898012484962613e-17 6.3611093629270335e-15 ;
 	setAttr -k on ".w0";
@@ -2580,7 +2580,7 @@ createNode parentConstraint -n "ikHandle1_parentConstraint1" -p "ikHandle1";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr ".lo" yes;
-	setAttr ".lr" -type "double3" 14.119186330915005 0 -48.140131655007089 ;
+	setAttr ".lr" -type "double3" 12.135715045673448 0 -48.140131655007103 ;
 	setAttr ".rst" -type "double3" -1.6059521436691284 23.695306777954102 -0.008813885971903801 ;
 	setAttr -k on ".w0";
 createNode poleVectorConstraint -n "ikHandle1_poleVectorConstraint1" -p "ikHandle1";
@@ -2661,7 +2661,7 @@ createNode parentConstraint -n "Arm_03_RK_JNT_parentConstraint1" -p "Arm_03_RK_J
 	setAttr ".tg[0].tor" -type "double3" -0.28154577802980157 0.33085592314493756 89.999187100348848 ;
 	setAttr ".tg[1].tot" -type "double3" -7.1054273576010019e-15 0 2.4406894908596266e-07 ;
 	setAttr ".tg[1].tor" -type "double3" -0.28154577802980157 0.33085592314493756 89.999187100348848 ;
-	setAttr ".lr" -type "double3" 9.6473537895506745 -17.7310119165736 30.940562558321947 ;
+	setAttr ".lr" -type "double3" 7.1478013638472904 -2.4162049930533231 33.985817212276643 ;
 	setAttr ".rst" -type "double3" 0.00024070842770029799 17.03941876922293 0.099423555177211589 ;
 	setAttr ".rsrr" -type "double3" -0.28154577802980163 0.33085592314493761 89.999187100348834 ;
 	setAttr -k on ".w0";
@@ -2689,7 +2689,7 @@ createNode parentConstraint -n "Arm_02_RK_JNT_parentConstraint1" -p "Arm_02_RK_J
 	setAttr ".tg[1].tot" -type "double3" 3.8857805861880479e-15 7.1054273576010019e-15 
 		2.9802322419961169e-07 ;
 	setAttr ".tg[1].tor" -type "double3" -0.33431630463916651 -0.27742927472494877 -89.999190610899674 ;
-	setAttr ".lr" -type "double3" -0.3343163046391715 -0.27742927472495216 -69.177065006593139 ;
+	setAttr ".lr" -type "double3" -0.33431630463916628 -0.27742927472494605 -74.662690741066697 ;
 	setAttr ".rst" -type "double3" -0.00021696461949227697 -15.244233567998043 0.075818666573503321 ;
 	setAttr ".rsrr" -type "double3" -0.33431630463916662 -0.27742927472494849 -89.999190610899674 ;
 	setAttr -k on ".w0";
@@ -2716,7 +2716,7 @@ createNode parentConstraint -n "Arm_01_RK_JNT_parentConstraint1" -p "Arm_01_RK_J
 	setAttr ".tg[1].tot" -type "double3" 4.4408920985006262e-16 4.4408920985006262e-16 
 		-1.7347234759768071e-18 ;
 	setAttr ".tg[1].tor" -type "double3" 0.28496728515301684 0.3279137313073246 90.000815463044361 ;
-	setAttr ".lr" -type "double3" 7.0101541340231659 -2.7176998452547148 78.97589855550126 ;
+	setAttr ".lr" -type "double3" -5.465610276857741 3.3386349140360938 81.808366297386868 ;
 	setAttr ".rst" -type "double3" -1.9000377315478074e-15 2.814203739166258 -0.0088141262531280518 ;
 	setAttr ".rsrr" -type "double3" 0.28496728515301678 0.3279137313073246 90.00081546304439 ;
 	setAttr -k on ".w0";
@@ -2735,7 +2735,7 @@ createNode joint -n "Arm_01_IK_JNT" -p "IK_JNT_Grp";
 createNode joint -n "Arm_02_IK_JNT" -p "Arm_01_IK_JNT";
 	rename -uid "46124316-4CCC-E88B-E744-A78D4A143428";
 	setAttr ".t" -type "double3" 15.244422114103022 5.3290666573035743e-15 -7.5766620675864335e-17 ;
-	setAttr ".r" -type "double3" 4.2092998453266019e-09 -3.5814460743275293e-09 20.822125604306535 ;
+	setAttr ".r" -type "double3" 3.100352373082776e-09 -2.6379077860032563e-09 15.336499869832975 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jot" -type "string" "xzy";
@@ -2763,7 +2763,7 @@ createNode orientConstraint -n "Arm_03_IK_JNT_orientConstraint1" -p "Arm_03_IK_J
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 20.089244969825788 -4.34746184403489 -17.908098614317481 ;
+	setAttr ".lr" -type "double3" 6.9187306460968019 3.8621777712777186 -15.24788371832982 ;
 	setAttr ".o" -type "double3" 0 0 -40.396505201116483 ;
 	setAttr -k on ".w0";
 createNode ikEffector -n "effector1" -p "Arm_02_IK_JNT";
@@ -2934,9 +2934,9 @@ createNode poseInterpolatorManager -n "poseInterpolatorManager";
 	rename -uid "D6F2F3A0-49D0-F6D6-36B0-7EB5AAEEFF90";
 createNode displayLayerManager -n "layerManager";
 	rename -uid "8AFA65A3-4EE2-CF3C-47D5-BDB75DF47E87";
-	setAttr ".cdl" 7;
-	setAttr -s 9 ".dli[1:8]"  1 2 3 4 5 6 7 0;
-	setAttr -s 8 ".dli";
+	setAttr ".cdl" 8;
+	setAttr -s 9 ".dli[1:8]"  1 2 3 4 5 6 7 8;
+	setAttr -s 9 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "B0EE6848-4080-37C0-CD4C-868FF50F4486";
 createNode renderLayerManager -n "renderLayerManager";
@@ -2989,7 +2989,7 @@ createNode script -n "uiConfigurationScriptNode";
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "BD2C5CD1-465F-C9C0-9CD0-FC9AF03B0F27";
-	setAttr ".b" -type "string" "playbackOptions -min 40 -max 110 -ast 0 -aet 213 ";
+	setAttr ".b" -type "string" "playbackOptions -min 0 -max 196 -ast 0 -aet 213 ";
 	setAttr ".st" 6;
 createNode displayLayer -n "geo_layer";
 	rename -uid "702C94B0-406D-5828-5EF8-F6A199AA5871";
@@ -3042,10 +3042,12 @@ createNode ikRPsolver -n "ikRPsolver";
 	rename -uid "3EBB2FD6-48AA-3DDC-C3C3-24B4D7F7C3D2";
 createNode displayLayer -n "IK_Control_Layer";
 	rename -uid "8480D101-4DB1-CD8D-BF67-D0B6C1424E3E";
+	setAttr ".v" no;
 	setAttr ".c" 13;
 	setAttr ".do" 5;
 createNode displayLayer -n "FK_Control_Layer";
 	rename -uid "E2A35930-42D0-CC2A-A5CA-95A81803DEB9";
+	setAttr ".v" no;
 	setAttr ".c" 6;
 	setAttr ".do" 4;
 createNode transformGeometry -n "transformGeometry3";
@@ -3701,6 +3703,7 @@ createNode gameFbxExporter -n "gameExporterPreset2";
 	setAttr ".ils" yes;
 	setAttr ".ilu" yes;
 	setAttr ".eti" 2;
+	setAttr ".esi" 2;
 	setAttr -s 4 ".ac";
 	setAttr ".ac[0].acn" -type "string" "Idle";
 	setAttr ".ac[0].ace" 30;
@@ -3713,10 +3716,12 @@ createNode gameFbxExporter -n "gameExporterPreset2";
 	setAttr ".ac[3].acn" -type "string" "Walk Cycle";
 	setAttr ".ac[3].acs" 170;
 	setAttr ".ac[3].ace" 196;
-	setAttr ".spt" 2;
 	setAttr ".ic" no;
 	setAttr ".ebm" yes;
+	setAttr ".ft" 1;
 	setAttr ".fv" -type "string" "FBX201800";
+	setAttr ".exp" -type "string" "C:/Users/kosuk/OneDrive/Documents/College/Rig&AnimEssentialsSpring2019/Rig-AnimEssentialsSpring2019/RigEssentialsSpring2019/scenes/Lamp Anims";
+	setAttr ".exf" -type "string" "Lamp Anims";
 createNode gameFbxExporter -n "gameExporterPreset3";
 	rename -uid "D09CD687-4F25-63BB-7864-3DA2AF3F3371";
 	setAttr ".pn" -type "string" "TE Anim Default";
@@ -3724,9 +3729,13 @@ createNode gameFbxExporter -n "gameExporterPreset3";
 	setAttr ".eti" 3;
 	setAttr ".ebm" yes;
 	setAttr ".fv" -type "string" "FBX201800";
+createNode displayLayer -n "Control_Layer";
+	rename -uid "DB51B89F-4DED-AF29-9372-E8A0F0DCCF0F";
+	setAttr ".v" no;
+	setAttr ".do" 8;
 select -ne :time1;
-	setAttr ".o" 70;
-	setAttr ".unw" 70;
+	setAttr ".o" 46;
+	setAttr ".unw" 46;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -3861,6 +3870,7 @@ connectAttr "Base_JNT.ssc" "base_geo_parentConstraint1.tg[0].tsc";
 connectAttr "Base_JNT.is" "base_geo_parentConstraint1.tg[0].tis";
 connectAttr "base_geo_parentConstraint1.w0" "base_geo_parentConstraint1.tg[0].tw"
 		;
+connectAttr "Control_Layer.di" "Transform_CTRL_GRP.do";
 connectAttr "Transform_CTRL_FKIKSwitch.o" "Transform_CTRL.FKIKSwitch";
 connectAttr "Transform_CTRL_translateX.o" "Transform_CTRL.tx";
 connectAttr "Transform_CTRL_translateY.o" "Transform_CTRL.ty";
@@ -4248,6 +4258,7 @@ connectAttr "FK_JNT_Grp.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[10].dn";
 connectAttr "reverse2.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[11].dn";
 connectAttr "IK_JNT_Grp.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[12].dn";
 connectAttr "layerManager.dli[7]" "Joints.id";
+connectAttr "layerManager.dli[8]" "Control_Layer.id";
 connectAttr "reverse1.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "reverse2.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
